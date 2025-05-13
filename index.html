@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen">
+    <nav class="bg-gray-700 h-10 flex items-center justify-between px-[1%]">
+        <div>
+            <ul class="flex flex-row gap-4">
+                <li class="text-white text-sm">Markdown Live Preview</li>
+                <li class="text-white text-sm">Reset</li>
+                <li class="text-white text-sm">Copy</li>
+                <li class="text-white text-sm flex gap-1"><input type="checkbox" name="" id="" value="Si">Sync scrool</li>
+            </ul>   
+        </div>
+        <div>
+            <img src="Recursos/github-142-svgrepo-com.svg" alt="github" class="w-4">
+        </div>
+    </nav>
+    <main class="border flex w-full h-full">
+        <div class="w-1/2">
+            <textarea class="w-full h-full" name="hojaEdicion" id="hojaEdicion"></textarea>
+        </div>
+        <div class="w-1/2">
+            <textarea class="w-full h-full" name="hojaResult" id="hojaResult"></textarea>
+        </div>
+    </main>    
+    
+</body>
+</html>
