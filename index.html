@@ -20,14 +20,15 @@
             <img src="Recursos/github-142-svgrepo-com.svg" alt="github" class="w-4">
         </div>
     </nav>
-    <main class="border flex w-full h-full">
-        <div class="w-1/2">
-            <textarea class="w-full h-full" name="hojaEdicion" id="hojaEdicion"></textarea>
+    <main class="border flex h-[calc(100vh-3.5rem)]">
+        <div class="w-1/2 h-full px-4 overflow-y-scroll" id="editor">
+            <!-- <textarea class="w-full h-full resize-none" name="hojaEdicion" id="hojaEdicion" ></textarea> -->
         </div>
-        <div class="w-1/2">
-            <textarea class="w-full h-full" name="hojaResult" id="hojaResult"></textarea>
+        <div class="w-1/2 h-full px-4" id="result">
+            <!-- <textarea class="w-full h-[100%] resize-none" name="hojaResult" id="hojaResult"></textarea> -->
         </div>
     </main>    
     
+    <script src="app.js"></script>
 </body>
 </html>
