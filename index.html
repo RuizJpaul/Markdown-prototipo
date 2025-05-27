@@ -7,27 +7,34 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="h-screen">
-    <nav class="bg-gray-700 h-10 flex items-center justify-between px-[1%]">
+    <nav class="bg-[#B2FBA5] h-10 flex items-center justify-between px-[1%]">
         <div>
             <ul class="flex flex-row gap-4">
-                <li class="text-white text-sm">Markdown Live Preview</li>
-                <li class="text-white text-sm">Reset</li>
-                <li class="text-white text-sm">Copy</li>
-                <li class="text-white text-sm flex gap-1"><input type="checkbox" name="" id="" value="Si">Sync scrool</li>
+                <li class="text-black text-sm hover:underline">Markdown Live Preview</li>
+                <li class="text-black text-sm hover:underline">Reset</li>
+                <li class="text-black text-sm hover:underline">Copy</li>
+                <li class="text-black text-sm flex gap-1"><input type="checkbox" name="" id="" value="Si">Sync scrool</li>
             </ul>   
         </div>
         <div>
-            <img src="Recursos/github-142-svgrepo-com.svg" alt="github" class="w-4">
+            <a href="https://github.com/RuizJpaul" target="_blank"><img src="Recursos/github-142-svgrepo-com.svg" alt="github" class="w-5"></a>
         </div>
     </nav>
     <main class="border flex h-[calc(100vh-3.5rem)]">
-        <div class="w-1/2 h-full px-4 overflow-y-scroll" id="editor">
-            <!-- <textarea class="w-full h-full resize-none" name="hojaEdicion" id="hojaEdicion" ></textarea> -->
+        <div class="w-[49%] h-full px-2 overflow-y-auto" id="div-editor">
+            <div id="contenedor1" class="flex">
+                <div id="div-cuadro-indice" class="w-[5%]">
+                    <div class="h-6 bg-gray-200 text-right select-none text-gray-500 border-r border-gray-300 flex justify-center" contenteditable="false" id="div-indice1">1</div>
+                </div>
+                <div id="div-cuadro-texto"  contenteditable="true" class="w-[100%]">
+                    <div class="flex-1 px-2 outline-none whitespace-pre-wrap overflow-y-auto" id="div-texto1" ># Este es el primer texto</div>
+                </div>
+            </div>
         </div>
-        <div class="w-1/2 h-full px-4" id="result">
-            <!-- <textarea class="w-full h-[100%] resize-none" name="hojaResult" id="hojaResult"></textarea> -->
+        <div class="w-[1%] h-full bg-gray-200"></div>
+        <div class="w-[49%] h-full px-4" id="div-result">
         </div>
-    </main>    
+    </main>
     
     <script src="app.js"></script>
 </body>
